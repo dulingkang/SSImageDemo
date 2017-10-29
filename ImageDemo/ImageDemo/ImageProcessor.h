@@ -12,5 +12,4 @@
 @interface ImageProcessor : NSObject
 
 + (UIImage *)blendImage:(UIImage *)image otherImage:(UIImage *)image1 positon:(CGPoint)point;
-+ (UIImage *)processUsingPixels:(UIImage*)inputImage;
 @end

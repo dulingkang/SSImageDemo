@@ -21,9 +21,8 @@
     UIImage *image1 = [UIImage imageNamed:@"background"];
     UIImage *image2 = [UIImage imageNamed:@"lion"];
 
-    self.imageView.image = [ImageProcessor processUsingPixels:image1];
+    self.imageView.image = [ImageProcessor blendImage:image1 otherImage:image2 positon:CGPointMake(image1.size.width*0.5, image1.size.height*0.2)];
     self.imageView.contentMode = UIViewContentModeScaleAspectFit;
-    // Do any additional setup after loading the view, typically from a nib.
 }
 
 
